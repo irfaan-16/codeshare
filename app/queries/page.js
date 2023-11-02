@@ -3,7 +3,8 @@ import CategoryFilter from "../components/CategoryFilter";
 import Queries from "../components/Queries";
 import { useState, useEffect } from "react";
 import Link from "next/link";
-const page = () => {
+
+const Page = () => {
   const [currLimit, setCurrLimit] = useState(5);
   const [queries, setQueries] = useState([]);
 
@@ -40,4 +41,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;

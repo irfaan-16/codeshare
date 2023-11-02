@@ -2,7 +2,7 @@
 import { useSession } from "next-auth/react";
 import CreateQuery from "@/app/components/CreateQuery";
 
-const page = () => {
+const Page = () => {
   const { data: session } = useSession();
   return (
     <main>
@@ -11,4 +11,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;

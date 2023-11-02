@@ -28,7 +28,7 @@ const Submissions = ({ submissions, showImage }) => {
         {submissions?.length ? (
           submissions.map((submission) => {
             return (
-              <div className={styles.listItem}>
+              <div className={styles.listItem} key={submission.title}>
                 <li onClick={() => handleOpenModal(submission)}>
                   {showImage
                     ? submission.title.slice(0, 23)

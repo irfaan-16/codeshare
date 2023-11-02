@@ -5,7 +5,7 @@ import SubmissionsLoading from "@/app/components/submissionsLoading";
 
 import Submissions from "../components/Submissions";
 import Link from "next/link";
-const page = () => {
+const Page = () => {
   const [data, setData] = useState([]);
   const [currLimit, setCurrLimit] = useState(10);
 
@@ -45,4 +45,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;

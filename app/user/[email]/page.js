@@ -3,7 +3,7 @@
 import Profile from "@/app/components/Profile";
 import { useEffect, useState } from "react";
 
-const page = ({ params }) => {
+const Page = ({ params }) => {
   const [data, setData] = useState([]);
   const decodedEmail = decodeURIComponent(params.email);
 
@@ -23,4 +23,4 @@ const page = ({ params }) => {
   );
 };
 
-export default page;
+export default Page;

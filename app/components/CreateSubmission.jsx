@@ -235,7 +235,7 @@ const CreateSubmission = () => {
           <div style={styles.tagsContainer}>
             {tags?.map((tag) => {
               return (
-                <p style={styles.tag} className="tag">
+                <p style={styles.tag} className="tag" key={tag}>
                   {tag}
                 </p>
               );

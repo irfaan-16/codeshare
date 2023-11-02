@@ -55,7 +55,7 @@ const Queries = ({ queries }) => {
                     <div className={styles.post_tags}>
                       <ul className={styles.tagsList}>
                         {post.tags.slice(0, 2).map((tag) => {
-                          return <li className={styles.tag}>{tag}</li>;
+                          return <li className={styles.tag} key={tag}>{tag}</li>;
                         })}
                       </ul>
                     </div>

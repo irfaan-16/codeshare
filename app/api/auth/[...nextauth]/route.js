@@ -22,7 +22,7 @@ const handler = NextAuth({
             name: user?.name?.replace(" ", "").toLowerCase(),
             email: user?.email,
             avatar: profile?.picture,
-            questins: [],
+            questions: [],
             submissions: [],
           });
         }

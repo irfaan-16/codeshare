@@ -211,7 +211,7 @@ const CreateQuery = () => {
           <div style={styles.tagsContainer}>
             {tags.map((tag) => {
               return (
-                <div>
+                <div key={tag}>
                   <span style={styles.tagBefore}></span>
                   <p style={styles.tag}>{tag}</p>
                 </div>
