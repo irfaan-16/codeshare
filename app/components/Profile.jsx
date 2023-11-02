@@ -20,7 +20,7 @@ const Profile = ({ data }) => {
       progress: undefined,
       theme: "dark",
     });
-    router.replace("/");
+    router?.replace("/");
   }
 
   const [type, setType] = useState("submissions");

@@ -12,7 +12,7 @@ const CreateSubmission = () => {
 
   useEffect(() => {
     if (session === null) {
-      router.replace("/");
+      router?.replace("/");
     }
   }, [session]);
 
