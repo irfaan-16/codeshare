@@ -1,8 +1,6 @@
 import NextAuth from "next-auth";
 import GoogleProvider from "next-auth/providers/google";
 import User from "@/app/lib/Models/User";
-// import connect from "@/app/lib/db/database";
-
 const handler = NextAuth({
   providers: [
     GoogleProvider({
@@ -19,11 +17,9 @@ const handler = NextAuth({
 
         if (!userExists) {
           await User.create({
-            name: user?.name?.replace(" ", "").toLowerCase(),
+            name: user?.name?.replace(" ", "")?.toLowerCase(),
             email: user?.email,
             avatar: profile?.picture,
-            questions: [],
-            submissions: [],
           });
         }
 
@@ -35,7 +31,7 @@ const handler = NextAuth({
     },
     async session({ session, user }) {
       const userExists = await User.findOne({
-        email: session.user.email,
+        email: session?.user?.email,
       });
       session.user.mongoDbId = userExists._id;
       return session;
