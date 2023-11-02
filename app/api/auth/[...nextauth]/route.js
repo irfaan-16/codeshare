@@ -14,14 +14,14 @@ const handler = NextAuth({
     async signIn({ user, profile }) {
       try {
         const userExists = await User.findOne({
-          email: user.email,
+          email: user?.email,
         });
 
         if (!userExists) {
           await User.create({
-            name: user.name.replace(" ", "").toLowerCase(),
-            email: user.email,
-            avatar: profile.picture,
+            name: user?.name?.replace(" ", "").toLowerCase(),
+            email: user?.email,
+            avatar: profile?.picture,
             questins: [],
             submissions: [],
           });
