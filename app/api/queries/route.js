@@ -1,6 +1,8 @@
 import Query from "@/app/lib/Models/Query";
+import connect from "@/app/lib/db/database";
 
 export const GET = async (req, res) => {
+  await connect();
   const { searchParams } = new URL(req.url);
   const limit = searchParams.get("limit");
   try {
