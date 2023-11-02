@@ -1,0 +1,116 @@
+.avatar {
+  border-radius: 100vmax;
+}
+
+.postsContainer {
+  margin-top: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+.heading {
+  font-size: 2rem;
+  margin: 1rem auto;
+  text-align: center;
+}
+.errormsg {
+  font-size: 2rem;
+}
+.post {
+  min-width: 370px;
+  max-width: 600px;
+  background: #1c1c247d;
+
+  box-shadow: 0px 0px 19.13148px 0px rgba(0, 0, 0, 0.25);
+  padding: 2rem;
+  border-radius: 10px;
+  max-height: 300px;
+  animation-name: post;
+  animation-duration: 0.3s;
+}
+.truncate {
+  cursor: pointer;
+}
+@keyframes post {
+  from {
+    opacity: 0;
+    transform: translateY(100px) scale(0);
+  }
+  to {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+  }
+}
+
+.date {
+  display: block;
+  margin: 0.5rem 0;
+  font-size: 14px;
+  font-weight: bold;
+  color: #ff0080;
+}
+
+.code {
+  color: rgba(255, 255, 255, 0.65);
+  font-size: 0.8rem;
+}
+
+.postFooter {
+  display: flex;
+  justify-content: space-between;
+}
+
+.tagsList {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.tag {
+  color: white;
+  font-weight: bold;
+  padding: 0.5rem;
+  font-size: 10px;
+  background: rgba(0, 0, 0, 0.28);
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.author_info {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.flex {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.username {
+  color: white;
+  font-weight: bold;
+  padding: 0.5rem;
+  font-size: 10px;
+  border-radius: 4px;
+  background: rgba(0, 0, 0, 0.28);
+  cursor: pointer;
+}
+
+.loadMore {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+.desc {
+  border-top: 2px solid rgba(255, 255, 255, 0.075);
+  padding: 0.5rem 0;
+}
+.truncate {
+  margin-bottom: 0.5rem;
+}

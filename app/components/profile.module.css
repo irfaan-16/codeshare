@@ -1,0 +1,120 @@
+.container {
+  padding: 1.5rem;
+}
+.name {
+  font-size: 2.3rem;
+  margin-bottom: 0.2rem;
+  font-weight: bold;
+}
+.userimage {
+  box-shadow: 0 0 20px #1e0fff0d;
+  border-radius: 100vmax;
+  height: 6rem;
+  width: 6rem;
+}
+.user_info {
+  border-radius: 10px;
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  margin: auto;
+  position: sticky;
+  top: 0;
+  backdrop-filter: blur(50px);
+  -webkit-backdrop-filter: blur(50px);
+  z-index: 2;
+}
+.profile_info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+  gap: 1rem;
+}
+.stats {
+  display: flex;
+  gap: 1rem;
+  justify-self: flex-end;
+}
+.stat {
+  padding: 0.5rem 0;
+  text-align: center;
+  width: 130px;
+  border-radius: 6px;
+  background: #1c1c247d;
+
+  box-shadow: 0 0 20px #1e0fff0d;
+  border: 2px solid transparent;
+  cursor: pointer;
+  user-select: none;
+  transition: border 0.4s;
+}
+.stat:hover {
+  border: 2px solid #ff0080;
+}
+.queries {
+  padding: 1rem;
+  border-radius: 10px;
+}
+.stat p {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+.stat span {
+  font-weight: bolder;
+  font-size: 3.2rem;
+  background: -webkit-linear-gradient(#7928ca, #ff0080);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.submissions_view {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+}
+.categories_container {
+  background: #1c1c247d;
+  border-radius: 10px;
+  min-width: 350px;
+  max-width: 350px;
+  height: max-content;
+  padding: 1rem;
+}
+.errormsg {
+  text-align: center;
+  margin-top: 0.5rem;
+  font-size: 1.5rem;
+}
+.categories {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 1rem;
+  overflow: auto;
+  max-height: 100px;
+}
+.title {
+  font-size: 2rem;
+  text-align: center;
+}
+
+.categories_container .category {
+  padding: 0.5rem;
+  max-width: fit-content;
+  cursor: pointer;
+  border-radius: 4px;
+  background: #ffffff06;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+.submissions {
+  background: #00000089;
+  padding: 1rem;
+  border-radius: 10px;
+  flex: 2;
+}
