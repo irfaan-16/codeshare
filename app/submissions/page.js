@@ -1,7 +1,7 @@
 "use client";
 import CategoryFilter from "../components/CategoryFilter";
 import { useEffect, useState } from "react";
-import SubmissionsLoading from "@/app/components/submissionsLoading";
+import SubmissionsLoading from "@/app/components/SubmissionsLoading";
 
 import Submissions from "../components/Submissions";
 import Link from "next/link";
