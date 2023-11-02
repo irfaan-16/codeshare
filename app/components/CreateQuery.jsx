@@ -2,7 +2,6 @@
 
 import { useSession } from "next-auth/react";
 import { useState, useEffect } from "react";
-import User from "../lib/Models/User";
 import { useRouter } from "next/navigation";
 import { toast } from "react-toastify";
 const CreateQuery = () => {
