@@ -13,6 +13,8 @@ export const GET = async (req, res) => {
 
     return new Response(JSON.stringify(submissions), { status: 200 });
   } catch (error) {
-    return new Response("Failed to Get the Submissions", { status: 500 });
+    return new Response(JSON.stringify("Failed to Get the Submissions"), {
+      status: 500,
+    });
   }
 };

@@ -13,6 +13,8 @@ export const GET = async (req, res) => {
     return new Response(JSON.stringify(queries), { status: 200 });
   } catch (error) {
     console.log(error);
-    return new Response("Failed to Get the Queries", { status: 500 });
+    return new Response(JSON.stringify("Failed to Get the Queries"), {
+      status: 500,
+    });
   }
 };
