@@ -4,8 +4,6 @@ import styles from "./Modal.module.css";
 import CopyToClipboard from "react-copy-to-clipboard";
 
 const Modal = ({ isOpen, onClose, currentCode }) => {
-  // const [copyText, setCopyText] = useState("Text to be copied");
-  // const [copied, setCopied] = useState(false);
   const [copied, setCopied] = useState(false);
 
   const handleCopy = () => {
@@ -30,6 +28,14 @@ const Modal = ({ isOpen, onClose, currentCode }) => {
         <div className={styles.contentContainer}>
           <p className={styles.desc}>{currentCode?.desc}</p>
           <pre className={styles.code}>{currentCode?.code}</pre>
+          {currentCode?.output && (
+            <>
+              <div className={styles.outputContainer}>
+                <h1>Output</h1>
+                <pre>{currentCode?.output}</pre>
+              </div>
+            </>
+          )}
         </div>
       </div>
 

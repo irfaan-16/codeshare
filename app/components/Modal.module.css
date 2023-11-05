@@ -105,3 +105,16 @@
   font-size: 1rem;
   overflow: auto;
 }
+.outputContainer h1 {
+  color: white;
+  margin-bottom: 1rem;
+}
+
+.outputContainer pre {
+  background: rgba(128, 128, 128, 0.185);
+  color: #fff;
+  padding: 1rem;
+  border-radius: 4px;
+  font-size: 1rem;
+  overflow: auto;
+}
