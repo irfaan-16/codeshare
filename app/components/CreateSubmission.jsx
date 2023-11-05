@@ -2,7 +2,6 @@
 
 import { useSession } from "next-auth/react";
 import { useState, useEffect } from "react";
-import User from "../lib/Models/User";
 import { toast } from "react-toastify";
 import { useRouter } from "next/navigation";
 
@@ -169,12 +168,14 @@ const CreateSubmission = () => {
     categoryTitle: {
       fontWeight: "bold",
       marginRight: "0.5rem",
+      color: "#fff",
     },
     tagInput: {
       padding: "0.5rem",
       borderRadius: "4px",
       background: "#171717",
       marginRight: "0.5rem",
+      color: "#fff",
     },
     tagsTitle: {
       fontWeight: "bold",

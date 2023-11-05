@@ -159,6 +159,21 @@ const CreateQuery = () => {
       alignItems: "center",
       gap: "0.5rem",
     },
+    tagInput: {
+      padding: "0.5rem",
+      borderRadius: "4px",
+      background: "#171717",
+      marginRight: "0.5rem",
+      color: "#fff",
+    },
+    addBtn: {
+      padding: "0.5rem",
+      background: "#171717",
+      color: "#ff0080",
+      fontWeight: "bold",
+      borderRadius: "4px",
+      cursor: "pointer",
+    },
   };
 
   return (
@@ -223,8 +238,11 @@ const CreateQuery = () => {
               type="text"
               onChange={(e) => setCurrentTag((prev) => (prev = e.target.value))}
               value={currentTag}
+              style={styles.tagInput}
             />
-            <button onClick={(e) => addTag(e)}>add</button>
+            <button onClick={(e) => addTag(e)} style={styles.addBtn}>
+              add
+            </button>
           </div>
         </div>
         <button

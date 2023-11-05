@@ -12,6 +12,7 @@ const styles = {
     alignItems: "center",
     justifyContent: "space-between",
     padding: "0 2rem",
+    color: "#fff",
   },
   searchContainer: {
     display: "flex",
