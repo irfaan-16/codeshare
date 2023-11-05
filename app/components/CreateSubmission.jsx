@@ -164,6 +164,7 @@ const CreateSubmission = () => {
       padding: "0.5rem",
       borderRadius: "4px",
       background: "#171717",
+      color: "#fff",
     },
     categoryTitle: {
       fontWeight: "bold",

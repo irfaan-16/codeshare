@@ -47,6 +47,7 @@ const styles = {
     cursor: "pointer",
     background: "transparent",
     borderRadius: "5px",
+    color: "#fff",
   },
   avatar: {
     borderRadius: "100vmax",
@@ -60,7 +61,6 @@ const styles = {
     gap: "1rem",
   },
   loginButton: {
-    // border: "2px solid rgba(121, 40, 202,0.8)",
     padding: "0.3rem 0.5rem",
     cursor: "pointer",
     display: "flex",
