@@ -3,12 +3,14 @@ import Submission from "@/app/lib/Models/Submission";
 import Query from "@/app/lib/Models/Query";
 
 export const GET = async (req, context, res) => {
+  await connect();
+
   const categoriesSet = new Set();
   const { email } = context.params;
   try {
     const user = await User.findOne({ email: email });
     if (!user) {
-      return new Response(JSON.stringify(null)  , { status: 404 });
+      return new Response(JSON.stringify(null), { status: 404 });
     }
 
     const subs = await Submission.find({ author: user._id }).populate("author");
