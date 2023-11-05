@@ -67,7 +67,6 @@ input {
 a {
   display: block;
   width: max-content;
-  margin:auto;
 }
 .createNewBtn {
   padding: 0.5rem 1rem;
