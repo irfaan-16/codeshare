@@ -22,7 +22,12 @@ const Page = () => {
       <CategoryFilter />
       <section>
         <h1
-          style={{ textAlign: "center", margin: "1.5rem 0", fontSize: "2rem" }}
+          style={{
+            textAlign: "center",
+            margin: "1.5rem 0",
+            fontSize: "2rem",
+            color: "#fff",
+          }}
         >
           Queries
         </h1>

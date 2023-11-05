@@ -8,10 +8,13 @@ const CategoryFilter = () => {
       alignItems: "center",
       justifyContent: "center",
       margin: "auto",
+      color: "#fff",
+      fontWeight: "bold",
     },
     link: {
       cursor: "pointer",
       background: "#171717",
+      color: "#fff",
       padding: "0.5rem",
       borderRadius: "4px",
       border: "1px solid #7928ca",

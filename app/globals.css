@@ -15,7 +15,7 @@ body {
 }
 
 body {
-  background-color: #00000095;
+  background-color: #0a0a0a;
   height: 100vh;
 }
 
@@ -54,18 +54,13 @@ input {
   background-color: #7928ca;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-}
-
 .loadMoreBtn {
   padding: 0.5rem 1rem;
   font-weight: bold;
   background-color: #171717;
   border-radius: 4px;
   margin: 1rem auto;
+  color: #fff;
   cursor: pointer;
   display: block;
 }
@@ -77,6 +72,7 @@ input {
   font-size: 1rem;
   font-weight: bold;
   margin: auto;
+  color: #fff;
   cursor: pointer;
 }
 

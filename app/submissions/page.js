@@ -24,7 +24,9 @@ const Page = () => {
       <CategoryFilter />
       {data?.length ? (
         <>
-          <h1 style={{ textAlign: "center", margin: "1.5rem 0" }}>
+          <h1
+            style={{ textAlign: "center", margin: "1.5rem 0", color: "#fff" }}
+          >
             Submissions
           </h1>
           <Link href={"/submission/new"}>
