@@ -1,6 +1,7 @@
 import User from "@/app/lib/Models/User";
 import Submission from "@/app/lib/Models/Submission";
 import Query from "@/app/lib/Models/Query";
+import connect from "@/app/lib/db/database";
 
 export const GET = async (req, context, res) => {
   await connect();
